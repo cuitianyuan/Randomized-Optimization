@@ -1,2 +1,11 @@
 # Randomized-Optimization
-Randomized optimization algorithms implementation via ABAGAIL
+
+## 1 Random Hill-Climbing (RHC)
+Random Hill Climbing is a straightforward brute force algorithm to obtain a local optima. The procedure is: Sample p points randomly in the neighborhood of the currently
+best solution; determine the best solution of the n sampled points. If it is better than the current solution, make it the new current solution and continue the search; otherwise, terminate returning the current solution.
+## 2 Genetic Algorithm (GA)
+A genetic algorithm (GA) is a method for solving randomized optimization problems based on a natural selection process that mimics biological evolution. The algorithm repeatedly modifies a population of individual solutions. At each step, the genetic algorithm randomly selects individuals from the current population and uses them as parents to produce the children for the next generation. Over successive generations, the population "evolves" toward an optimal solution.
+## 3 Simulated Annealing (SA)
+Simulated annealing (SA) is a method for solving unconstrained and bound-constrained optimization problems. At each iteration of the simulated annealing algorithm, a new point is randomly generated. The distance of the new point from the current point, or the extent of the search, is based on a probability distribution with a scale proportional to the temperature. The algorithm accepts all new points that lower the objective, but also, with a certain probability, points that raise the objective. By accepting points that raise the objective, the algorithm avoids being trapped in local minima in early iterations and is able to explore globally for better solutions.
+## 4 Mutual-Information-Maximizing Input Clustering (MIMIC)
+MIMIC algorithm explicitly communicates information about the cost function obtained from one iteration of the search to later iterations of the search. There are two main components of MIMIC: first, a randomized optimization algorithm that samples from those regions of the input space most likely to contain the optima for C(); second, an effective density estimator that can be used to capture a wide variety of structure on the input space, yet is computable from simple second order statistics of the data. MIMIC’s results on several cost functions indicate an order of magnitude improvement in performance over related approaches.
